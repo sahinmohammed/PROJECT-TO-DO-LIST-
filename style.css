@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #000000 0%, #000000 74%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif !important; 
+   font-family: 'Roboto', sans-serif !important; 
+}
+header img {
+  width: 70px;
+  height: 80px;
+  border-radius: 30%;
+  margin-right: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+}
+.container {
+  width: 50%;
+  background-color:crimson;
+  min-height: 70vh;
+  border-radius: 15px;
+  padding-bottom: 3.5rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.51),
+    -10px -10px 20px rgba(0, 0, 0, 0.275),
+    inset 5px 5px 15px rgba(63, 63, 63, 0.397);
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  font-size: 1.3rem;
+  font-family: cursive;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: none;
+  background: rgb(255, 255, 255);
+}
+
+form input {
+  width: 70%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+}
+
+form button {
+  color: white;
+  background-color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 15%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+form button:hover {
+  background-image: linear-gradient(315deg, #ffffff 0%, #ffffff 74%);
+  color: rgb(0, 0, 0);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 60%;
+  list-style: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.todo {
+  margin: 1rem;
+  background: rgb(255, 255, 255);
+  color: black;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  height: 50px;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+.complete-btn {
+  background-color: #7bfe8a;
+  background: linear-gradient(#7bfe8a , #57fe41);
+  font-size: 20px;
+  color: white;
+}
+.trash-btn {
+  background-color: #000000;
+  font-size: 20px;
+  color: white;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(12rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #000000;
+  width: 16rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #000000;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: #000000;
+    border-left: 1.3px solid rgba(0, 0, 0, 0.364);
+}
